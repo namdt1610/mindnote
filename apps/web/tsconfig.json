@@ -8,7 +8,7 @@
             "@/components/*": ["./components/*"],
             "ui": ["../../packages/ui/src/index.ts"],
             "ui/styles/*": ["../../packages/ui/src/styles/*"],
-            "@workspace/ui/tailwind.config": ["packages/ui/tailwind.config.ts"]
+            "ui/tailwind.config": ["../../packages/ui/tailwind.config.ts"]
         },
         "plugins": [
             {
@@ -22,6 +22,6 @@
         "**/*.ts",
         "**/*.tsx",
         ".next/types/**/*.ts"
-    ],
+, "tailwind.config.js"    ],
     "exclude": ["node_modules"]
 }
