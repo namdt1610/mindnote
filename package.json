@@ -1,7 +1,12 @@
 {
-    "name": "shadcn-ui-monorepo",
+    "name": "mindnote-monorepo",
     "version": "0.0.1",
     "private": true,
+    "exports": {
+        "./components/*": "./src/components/*.tsx",
+        "./styles/globals.css": "./src/styles/globals.css",
+        "./lib/*": "./src/lib/*.ts"
+    },
     "scripts": {
         "build": "turbo build",
         "dev": "turbo dev",
@@ -19,7 +24,6 @@
     "devDependencies": {
         "@workspace/eslint-config": "workspace:*",
         "@workspace/typescript-config": "workspace:*",
-        "autoprefixer": "^10.4.21",
         "prettier": "^3.5.1",
         "turbo": "^2.4.2",
         "typescript": "5.7.3"
